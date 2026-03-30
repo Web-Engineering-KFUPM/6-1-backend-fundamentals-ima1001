@@ -17,6 +17,13 @@ app.get('api/', (req, res) => {
      res.send('Hello from the back-end server');
    });
 
+// TODO 6: Create the "/about" route
+app.get('api/about', (req, res) => {
+     res.send('This is the about route');
+   });
+
+
+// TODO 7: Create the "/student" route
 
 
 
