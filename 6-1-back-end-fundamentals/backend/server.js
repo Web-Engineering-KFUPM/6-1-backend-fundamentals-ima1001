@@ -12,6 +12,11 @@ app.use(cors({ origin: 'http://localhost:3000' }));
 
 
 
+// TODO 5: Create the home route "/"
+app.get('api/', (req, res) => {
+     res.send('Hello from the back-end server');
+   });
+
 
 
 
