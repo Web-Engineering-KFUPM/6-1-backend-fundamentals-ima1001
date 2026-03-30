@@ -364,11 +364,11 @@ export default function App() {
   // TODO 8:
   // Request student data from the server when the page loads
   // Syntax hint:
-  fetch('http://localhost:3000/students')
+  useState(() => {fetch('http://localhost:3000/students')
      .then((res) => res.json())
      .then((data) => {
        setStudent(data);
-     });
+     })}, []);
 
   return (
     <main className="app-shell">
