@@ -24,7 +24,12 @@ app.get('api/about', (req, res) => {
 
 
 // TODO 7: Create the "/student" route
-
+app.get('api/students', (req, res) => {
+     res.json({
+       name: 'Aisha',
+       major: 'Computer Science',
+     });
+   });
 
 
 // TODO 4: Start the server on port 3000
